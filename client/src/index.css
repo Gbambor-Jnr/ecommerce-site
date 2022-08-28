@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}

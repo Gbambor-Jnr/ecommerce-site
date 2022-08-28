@@ -1,0 +1,75 @@
+.sidedraw {
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 250;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* ease out means it starts fast and ends slow */
+}
+
+.show {
+  transform: translateX(0);
+}
+
+.sidedraw__links {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.sidedraw__links li {
+  display: flex;
+  align-items: center;
+}
+
+.sidedraw__links li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  color: black;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.sidedraw__links li a:hover {
+  background: #171717;
+  color: #f4f4f4;
+}
+
+.sidedraw__links li a span {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.sidedraw__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 25px;
+
+  height: 25px;
+  border-radius: 50%;
+  background-color: #171717;
+  color: #f4f4f4;
+}
+
+.sidedraw__links li a:hover .sidedraw__badge {
+  background: #f4f4f4;
+  color: #171717;
+}
+
+@media (max-width: 960px) {
+  .sidedraw {
+    display: none;
+  }
+}
